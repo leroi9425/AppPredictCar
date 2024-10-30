@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: space-between;
+        }
+        select{
+            width: 400px;
+            padding: 10px;
+        }
+        input{
+            width: 300px;
+            padding: 10px;
+        }
+        table{
+            background-color: rgb(255, 255, 255);
+        }
+        .btn-pre{
+            height: 50px;
+            width: 100px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+        <form action="/input" method="post">
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>CarName</td>
+                        <td>
+                            <select style="width: 100px;" name="CarName" >
+                                <option value="{{carname}}" selected>{{carname}}</option>
+                                <option value="alfa-romero">alfa-romero</option>
+                                <option value="audi">audi</option>
+                                <option value="bmw">bmw</option>
+                                <option value="chevrolet">chevrolet</option>
+                                <option value="dodge">dodge</option>
+                                <option value="honda">honda</option>
+                                <option value="isuzu">isuzu</option>
+                                <option value="jaguar">jaguar</option>
+                                <option value="maxda">maxda</option>
+                                <option value="buick">buick</option>
+                                <option value="mercury">mercury</option>
+                                <option value="mitsubishi">mitsubishi</option>
+                                <option value="nissan">nissan</option>
+                                <option value="peugeot">peugeot</option>
+                                <option value="plymouth">plymouth</option>
+                                <option value="porsche">porsche</option>
+                                <option value="renault">renault</option>
+                                <option value="saab">saab</option>
+                                <option value="subaru">subaru</option>
+                                <option value="toyota">toyota</option>
+                                <option value="volkswagen">volkswagen</option>
+                                <option value="volvo">volvo</option>
+                            </select>
+                            <input style="width: 250px;" type="text" name="justname" value="{{justname}}" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fueltype</td>
+                        <td>
+                            <select name="fueltype">
+                                <option value="{{fueltype}}" selected>{{fueltype}}</option>
+                                <option value="gas">gas</option>
+                                <option value="diesel">diesel</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Aspiration</td>
+                        <td>
+                            <select name="aspiration">
+                            <option value="{{aspiration}}" selected>{{aspiration}}</option>
+                            <option value="std">std</option>
+                            <option value="turbo">turbo</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Doornumber</td>
+                        <td>
+                            <select name="doornumber">
+                                <option value="{{doornumber}}" selected>{{doornumber}}</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carbody</td>
+                        <td>
+                            <select name="carbody">
+                                <option value="{{carbody}}" selected>{{carbody}}</option>
+                                <option value="convertible">convertible</option>
+                                <option value="hatchback">hatchback</option>
+                                <option value="sedan">sedan</option>
+                                <option value="wagon">wagon</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Drivewheel</td>
+                        <td>
+                            <select name="drivewheel">
+                                <option value="{{drivewheel}}" selected>{{drivewheel}}</option>
+                                <option value="rwd">rwd</option>
+                                <option value="fwd">fwd</option>
+                                <option value="4wd">4wd</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enginelocation</td>
+                        <td>
+                            <select name="enginelocation">
+                                <option value="{{enginelocation}}" selected>{{enginelocation}}</option>
+                                <option value="rear">rear</option>
+                                <option value="front">front</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wheelbase</td>
+                        <td><input type="text" name="wheelbase" value="{{wheelbase}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Carlength</td>
+                        <td><input type="text" name = "carlength" value="{{carlength}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Carwidth</td>
+                        <td><input type="text" name="carwidth" value="{{carwidth}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Carheight</td>
+                        <td><input type="text" name="carheight" value="{{carheight}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Curbweight</td>
+                        <td><input type="text" name="curbweight" value="{{curbweight}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Enginetype</td>
+                        <td>
+                            <select name="enginetype">
+                                <option value="{{enginetype}}" selected>{{enginetype}}</option>
+                                <option value="ohcv">ohcv</option>
+                                <option value="rotor">rotor</option>
+                                <option value="ohc">ohc</option>
+                                <option value="dohcv">dohcv</option>
+                                <option value="dohc">dohc</option>
+                                <option value="l">l</option>
+                                <option value="ohcf">ohcf</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cylindernumber</td>
+                        <td>
+                            <select name="cylindernumber">
+                                <option value="{{cylindernumber}}" selected>{{cylindernumber}}</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enginesize</td>
+                        <td><input type="text" name="enginesize" value="{{enginesize}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Fuelsystem</td>
+                        <td>
+                            <select name="fuelsystem">
+                                <option value="{{fuelsystem}}" selected>{{fuelsystem}}</option>
+                                <option value="spdi">spdi</option>
+                                <option value="idi">idi</option>
+                                <option value="mfi">mfi</option>
+                                <option value="1bbl">1bbl</option>
+                                <option value="2bbl">2bbl</option>
+                                <option value="4bbl">4bbl</option>
+                                <option value="spfi">spfi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Boreratio</td>
+                        <td><input type="text" name="boreratio" value="{{boreratio}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Stroke</td>
+                        <td><input type="text" name="stroke" value="{{stroke}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Compressionratio</td>
+                        <td><input type="text" name="compressionratio" value="{{compressionratio}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Horsepower</td>
+                        <td><input type="text" name="horsepower" value="{{horsepower}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Peakrpm</td>
+                        <td><input type="text" name="peakrpm" value="{{peakrpm}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Citympg</td>
+                        <td><input type="text" name="citympg" value="{{citympg}}"></td>
+                    </tr>
+                    <tr>
+                        <td>Highwaympg</td>
+                        <td><input type="text" name="highwaympg" value="{{highwaympg}}"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rightContent">
+                <select name="option" required>
+                    <option value="" disabled selected>Select transmission</option>
+                    <option value="linear">Linear Regression</option>
+                    <option value="tree">Decision Tree</option>
+                </select>
+                <br>
+                <button class="btn-pre">Prediction</button>
+                <br>
+                <br>
+
+                car price prediction: 
+                <br>
+                <p>{{ketqua}} $</p>
+            </div>
+        </form>
+    
+</body>
+</html>
